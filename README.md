@@ -1,6 +1,7 @@
 React-SSR项目
 
 1、clone后，yarn安装依赖
+
 2、 yarn dev:run //打包运行
     yarn dev:build //打包
     yarn dev:start //运行服务
