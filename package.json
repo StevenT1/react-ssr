@@ -4,9 +4,9 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "run": "scripty run",
-        "start": "scripty start",
-        "build": "scripty build",
+        "doit": "scripty",
+        "start": "scripty",
+        "build": "scripty",
         "build:client": "webpack --config build/webpack.client.js",
         "build:server": "webpack --config build/webpack.server.js"
     },

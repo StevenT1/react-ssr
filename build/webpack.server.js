@@ -1,9 +1,6 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
-const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
-
-const smp = new SpeedMeasurePlugin();
-module.exports = smp.wrap({
+module.exports = {
     mode: 'development',
     // cache: true,
     // cache: {
@@ -25,4 +22,4 @@ module.exports = smp.wrap({
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.json', '.mjs']
     }
-})
+}

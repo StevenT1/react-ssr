@@ -10,7 +10,7 @@ class About extends React.Component<Y> {
     //暴露出一个静态的加载数据的方法，存在store里
     static loadData = (store) => {
         return new Promise((resolve, reject) => {
-            axios.get('http://localhost:8080/getData').then(response => {
+            axios.get('http://localhost:7777/getData').then(response => {
                 store.dispatch({ type: "CHANGE_STATE", payload: { data: response.data.data } })
                 resolve('response.data.data')
             })
@@ -22,7 +22,7 @@ class About extends React.Component<Y> {
     //判断是否初始值为空，是空就调接口拿值
     componentDidMount() {
         if(!this.props.data){
-            axios.get('http://localhost:8080/getData').then(response => {
+            axios.get('http://localhost:7777/getData').then(response => {
                 this.props.dispatch({ type: "CHANGE_STATE", payload: { data: response.data.data } })
             })
         }

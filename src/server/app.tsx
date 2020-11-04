@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import App from '../shared/app';
 import { Provider } from 'react-redux';
-import { createServerStore } from '../../store'
+import { createServerStore } from '../shared/store'
 import routes from '../shared/Routes';
 
 const fs = require('fs');
