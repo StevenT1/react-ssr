@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>ssr</title>
-        </head>
-        <body>
-            <div id='root'><!--html--></div>
-            <!--store-->
-        </body>
-        </html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ssr</title>
+</head>
+
+<body>
+    <div id='root'>
+        <!--html-->
+    </div>
+    <!--store-->
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // 敲黑板, 这里的/workbox/workboxServiceWorker.js需要根据实际情况变化, 因为我项目没部署到根域名, 所以加了workbox的路径名...
+                // 注意: 这里有个坑 workboxServiceWorker 会被缓存, 解决方案在下面的坑点介绍
+                navigator.serviceWorker.register('assets/service-worker.js').then(registration => {
+                    console.log('SW registered: ', registration)
+                }).catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError)
+                })
+            })
+
+        }
+    </script> -->
+</body>
+
+</html>
